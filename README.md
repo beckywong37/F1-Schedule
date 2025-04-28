@@ -2,10 +2,10 @@ F1 Website for the 2024 Season. Find driver standings, driver lineup for each te
 - Drivers standing was retrieved using Ergast API
 
 ### Home Page
-![Home Page](../static/images/home_page.png)
+![Home Page](/static/images/home_page.png)
 
 ### Schedule Page
-![Schedule Page](../static/images/schedule.png)
+![Schedule Page](/static/images/schedule.png)
 
 ### Team Page
-![Team Page](../static/images/teams.png)
+![Team Page](/static/images/teams.png)
