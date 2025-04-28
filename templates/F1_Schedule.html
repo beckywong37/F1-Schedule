@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Add viewport to meta tag to create responsive website -->
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Formula 1, F1, race">
+        <title>F1 2024 Grid</title>
+        <!-- Bootstrap CSS (place before my css file!) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Styles css in separate file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles_schedule.css') }}">
+        <!-- Bootstrap Javascript-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <!-- F1 logo -->
+        <img src="{{ url_for('static', filename='images/img1.png') }}" alt="F1 Logo" width="100" height="50">
+        <!-- Horizontal Nagivation Bar -->
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/teams">Teams</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+        <br>
+        <!-- Header 2: F1 Schedule 2024 -->
+        <h2 id="h2">F1 2024 Schedule</h2>
+        <!-- Dropdown menu to Select Race styled with Bootstrap-->
+        <label id="labelSelectRace" for="selectRace">Select Race</label>
+        <select id="selectRace" class="custom-select-sm">
+            <option value="Bahrain GP">Bahrain Grand Prix</option>
+            <option value="Saudi Arabia GP">Saudi Arabia Grand Prix</option>
+            <option value="Monaco GP">Monaco Grand Prix</option>
+            <option value="Australian GP">Austrialian Grand Prix</option>
+            <option value="Japanese GP">Japanese Grand Prix</option>
+            <option value="Chinese GP">Chinese Grand Prix</option>
+            <option value="Miami GP">Miami Grand Prix</option>
+            <option value="Italian GP">Italian Grand Prix</option>
+            <option value="Canada GP">Canada Grand Prix</option>
+            <option value="Spain GP">Spain Grand Prix</option>
+            <option value="Austria GP">Austria Grand Prix</option>
+            <option value="Great Britain GP">Great Britain Grand Prix</option>
+            <option value="Hungary GP">Hungary Grand Prix</option>
+            <option value="Belgium GP">Belgium Grand Prix</option>
+            <option value="Dutch GP">Dutch Grand Prix</option>
+        </select>
+        <!-- Buttons styled with Bootstrap, refactor to call Flask routes-->
+        <button type="button" class="btn btn-success" onclick="showRaceDetails('get_race_details')">Show Race Details</button>
+        <button type="button" class="btn btn-success" onclick="showRaceTrack('get_race_track')">Show Race Track</button>
+        <!-- Output of buttons with ids assigned for CSS styling -->
+        <div id="raceDetailsOutput"></div>
+        <div id="raceTrackOutput"></div>
+        <br>
+        <!-- Link Javascript file -->
+        <script src="{{ url_for('static', filename='myScript.js') }}"></script>
+    </body>
+</html>

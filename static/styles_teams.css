@@ -1,0 +1,103 @@
+.anchor {
+    background-color: rgb(106, 154, 154);
+}
+img {
+    float: left;
+}
+/* F1 logo is not on same line as nav bar with clearfix (remove if want to keep on same line) */
+.clearfix {
+overflow: auto;
+}
+/* horizontal nagivation bar */
+ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e0404;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #696565;
+}
+
+.active {
+    background-color: #a00f08;
+}
+/* Media queries to horizontal navigation bar for responsiveness  */
+@media screen and (max-width:800px) {
+    li {
+        float: right;
+        width:100%
+    }
+    li a{
+        text-align: inherit;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+#h1 {
+    font: italic small-caps bold 55px/60px Helvetica Condensed, serif;
+    color:whitesmoke;
+    background-color:rgb(212, 21, 21);
+    text-align: center;
+
+}
+#h2 {
+    font: italic bold 35px Helvetica Condensed, serif;
+    text-align: left;
+    color: rgb(227, 232, 239);
+    background-color:rgb(157, 124, 54);
+    padding: 20px 20px 20px 20px;
+    border: 2px solid black;
+    line-height: 0.3;
+}
+body {
+    text-align: center;
+    background-color: #000000;
+}
+/* Containers for 10 teams and dropdown menu */
+.container {
+    font: bold 20px Monospace, serif;
+    background-color: coral;
+    padding: 30px;
+    border: 3px solid black; /* Add borders or other styles as needed */
+    box-sizing: border-box;
+    margin: 5px; /* Adjust margin as needed */
+    float: left;
+}
+.container:hover {
+    border-color: rgb(255, 47, 0);
+}
+.dropdown {
+    position: relative;
+    display:inline-block
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #c53b3b;
+    padding: 10px;
+    z-index: 1;
+    top: 100%; /*dropdown menu will drop below container */
+    width: 75% 
+    
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+.clear-left {
+    clear: left;
+}
+

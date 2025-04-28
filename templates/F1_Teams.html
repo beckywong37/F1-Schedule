@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Add viewport to meta tag to create responsive website -->
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <meta name="author" content="John Doe">
+        <meta name="keywords" content="Formula 1, F1, race">
+        <title>F1 2024 Grid</title>
+        <!-- Bootstrap CSS (place before my css file!) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- Styles css in separate file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles_teams.css') }}">
+    </head>
+    
+    <body>
+        <!-- F1 logo -->
+            <img src="{{ url_for('static', filename='images/img1.png') }}" alt="F1 Logo" width="100" height="50">
+        </div>
+        <!-- Horizontal Nagivation Bar -->
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/schedule">Schedule</a></li>
+            <li><a href="/teams">Teams</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+          </ul>
+        <br>
+        <!-- Header 2: F1 Teams 2024 -->
+        <h2 id="h2">F1 Teams 2024</h2>
+
+        <!-- 10 Teams with dropdown menu to display drivers -->
+        <div class="dropdown">
+            <div class="container">Mercedes</div>
+            <div class="dropdown-content">
+                <p>Lewis Hamilton</p>
+                <p>George Russell</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Red Bull</div>
+            <div class="dropdown-content">
+                <p>Max Verstappen</p>
+                <p>Sergio Perez</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Ferrari</div>
+            <div class="dropdown-content">
+                <p>Charles Leclerc</p>
+                <p>Carlos Sainz</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">McLaren</div>
+            <div class="dropdown-content">
+                <p>Oscar Piastri</p>
+                <p>Londo Norris</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">AlphaTauri</div>
+            <div class="dropdown-content">
+                <p>Daniel Ricciardo</p>
+                <p>Yuki Tsunoda</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Aston Martin</div>
+            <div class="dropdown-content">
+                <p>Lance Stroll</p>
+                <p>Fernando Alonso</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Alpine</div>
+            <div class="dropdown-content">
+                <p>Esteban Ocon</p>
+                <p>Pierre Gasly</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Williams</div>
+            <div class="dropdown-content">
+                <p>Logan Sargeant</p>
+                <p>Alexander Albon</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Stack</div>
+            <div class="dropdown-content">
+                <p>Valtteri Bottas</p>
+                <p>Zhou Guanyu</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="container">Hass</div>
+            <div class="dropdown-content">
+                <p>Kevin Magnussen</p>
+                <p>Nico Hulkenberg</p>
+            </div>
+        </div>
+
+        <!-- Clear left after containers using paragraph-->
+        <p class="clear-left"></p>
+    </body>
+</html>

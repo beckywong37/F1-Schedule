@@ -1,0 +1,93 @@
+/* F1 logo */
+img {
+    float: left;
+}
+/* horizontal nagivation bar */
+ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e0404;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #696565;
+}
+
+.active {
+    background-color: #a00f08;
+}
+/* Media queries to horizontal navigation bar for responsive  */
+@media screen and (max-width:800px) {
+    li {
+        float: right;
+        width:100%
+    }
+    li a{
+        text-align: inherit;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+/* Style for headers */
+#h1 {
+    font: italic small-caps bold 55px/60px Helvetica Condensed, serif;
+    color:whitesmoke;
+    background-color:rgb(212, 21, 21);
+    text-align: center;
+
+}
+#h2 {
+    font: italic bold 35px Helvetica Condensed, serif;
+    text-align: left;
+    color: rgb(227, 232, 239);
+    background-color:rgb(157, 124, 54);
+    padding: 20px 20px 20px 20px;
+    border: 2px solid black;
+    line-height: 0.3;
+}
+body {
+    text-align: center;
+    background-color: #000000;
+}
+/* Dropdown menu to select race */
+#labelSelectRace {
+    color: white;
+}
+#selectRace {
+    font-size: 18px;
+    background-color: rgb(152, 206, 214);
+}
+/* Buttons */
+button {
+    font-size: 18px;
+    background-color: greenyellow;
+}
+button:hover {
+    background-color: rgb(41, 179, 41);
+}
+/* Outputs from Show Race Details and Show Track Image buttons */
+#raceDetailsOutput {
+    font: small-caps 20px Monaco, serif;
+    color:whitesmoke;
+}
+#imgElement {
+    display: block; /* still having trouble centering image */
+    max-width: 100%;
+
+}
+
+
+

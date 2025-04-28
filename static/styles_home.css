@@ -1,0 +1,81 @@
+/* F1 logo */
+img {
+    float: left;
+}
+/* horizontal nagivation bar */
+ul {
+    position:sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e0404;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #696565;
+}
+
+.active {
+    background-color: #a00f08;
+}
+/* Media queries to horizontal navigation bar for responsive  */
+@media screen and (max-width:800px) {
+    li {
+        float: right;
+        width:100%
+    }
+    li a{
+        text-align: inherit;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+h1 {
+    color:rgb(163, 158, 158)
+}
+
+h2 {
+    color:rgb(163, 158, 158)
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000000;
+}
+
+.lights-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+}
+
+
+.light {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(212, 206, 206);
+}
+
+.red {
+    background-color: red;
+}
+
+table {
+    margin: 0 auto;
+    color:rgb(163, 158, 158)
+}
